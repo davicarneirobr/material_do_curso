@@ -78,5 +78,5 @@ library(dplyr)
 nova_base_de_dados <- filter(base_de_dados, origem=="ERW")
 select(nova_base_de_dadosm, ano, mes, dia, origem)
 
-base_de_dados %>% filter(origem=="EWR") %>% select(ano, mes, dia, origem) %>% count(dia)
+base_de_dados %>% filter(destino=="ATL") %>% select(ano, mes, dia, origem) %>% count(dia)
 
